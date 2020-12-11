@@ -86,3 +86,35 @@
 .el-link--inner{
   font-weight: normal!important;
 }
+
+
+.el-form-item{
+  margin-bottom: 10px!important;
+}
+.el-input--mini .el-input__inner, .el-range-editor--mini.el-input__inner {
+  height: 34px !important;
+  line-height: 34px !important;
+}
+.el-form-item__label {
+  font-size: 13px !important;
+  padding-right: 0!important;
+}
+.el-table__header-wrapper {
+  padding-top: 10px !important;
+}
+.el-table__header th {
+  padding: 12px 0!important;
+  background: #fcfcfc !important;
+}
+.el-table__header {
+  font-size: 14px !important;
+}
+.el-pagination .el-input--mini .el-input__inner, .el-pagination .el-range-editor--mini.el-input__inner {
+  height: 28px !important;
+  line-height: 28px !important;
+}
+.el-pagination{
+  background: #fcfcfc;
+  text-align: right;
+  padding: 10px !important;
+}

@@ -58,6 +58,18 @@ export let constantRoutes = [
       }
     ]
   },
+  {
+    path: '/productList',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/productList.vue'),
+        name: 'productList',
+        meta: { title: '微信产品', icon: 'guide', noCache: true }
+      }
+    ]
+  }
 ]
 
 constantRoutes = [
