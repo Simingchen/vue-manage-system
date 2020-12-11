@@ -7,7 +7,7 @@ import Element from 'element-ui'
 import 'normalize.css/normalize.css' // a modern alternative to CSS resets
 
 import './icons' // icon
-import './permission' // permission control
+import './permission' // 路由权限
 import '@utils/error-log' // error log
 import '@utils/mixin.js' // 全局混入
 import '@utils/axios.js' // axios

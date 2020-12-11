@@ -7,8 +7,8 @@
       </el-button>
       <el-button slot="append" @click="visible=true">
         <el-popover popper-class="filterInput" v-model="visible" placement="bottom" title="筛选条件" width="340">
-          <i slot="reference" class="iconfont">&#xe64a;</i>
-          <slot name="popover" />
+          <i slot="reference" class="iconfont iconguolv"></i>
+          <slot />
         </el-popover>
       </el-button>
     </el-input>
