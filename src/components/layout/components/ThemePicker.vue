@@ -28,7 +28,7 @@ export default {
     };
   },
   mounted() {
-    if (this.default != null) {
+    if (this.default != null && this.default != "null") {
       this.theme = this.default;
       this.$emit("onThemeChange", this.theme);
       this.showSuccess = false;

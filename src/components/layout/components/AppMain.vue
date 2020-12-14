@@ -25,13 +25,16 @@ export default {
 <style lang="scss" scoped>
 .app-main {
   /* 50= navbar  50  */
-  min-height: calc(100vh - 0px);
+  min-height: calc(100vh - 50px);
   // width: 100%;
   position: relative;
   overflow: hidden;
   background: #fff;
   padding: 15px 15px 0;
   margin-right: 15px;
+}
+.fixed-header + .app-main {
+  min-height: calc(100vh - 90px);
 }
 
 .hasTagsView {
@@ -42,6 +45,7 @@ export default {
 
   .fixed-header + .app-main {
     // padding-top: 100px;
+    min-height: calc(100vh - 90px);
   }
 }
 </style>
@@ -50,7 +54,7 @@ export default {
 // fix css style bug in open el-dialog
 .el-popup-parent--hidden {
   .fixed-header {
-    padding-right: 15px;
+    // padding-right: 15px;
   }
 }
 </style>
