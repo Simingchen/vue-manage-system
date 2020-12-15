@@ -5,6 +5,7 @@
 <script>
 const version = require("element-ui/package.json").version; // element-ui version from node_modules
 const ORIGINAL_THEME = "#409EFF"; // default color
+
 export default {
   name: "ThemePicker",
   props: {
@@ -12,7 +13,7 @@ export default {
       // 初始化主题，可由外部传入
       type: String,
       //default: '#EB815B'
-      default: "" + localStorage.getItem("tremePackers") + ""
+      default: "" + localStorage.getItem("theme") + ""
     },
     size: {
       // 初始化主题，可由外部传入
@@ -91,7 +92,7 @@ export default {
       // 响应外部操作
       this.$emit("onThemeChange", val);
       //存入localStorage
-      localStorage.setItem("tremePackers", val);
+      localStorage.setItem("theme", val);
       if (this.showSuccess) {
         this.$message({
           message: "换肤成功",

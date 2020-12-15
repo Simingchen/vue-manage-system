@@ -31,6 +31,17 @@ Vue.use(Router)
  */
 export let constantRoutes = [
   {
+    path: '/redirect',   // 重定向页面，用来刷新页面
+    component: Layout,
+    hidden: true,
+    children: [
+      {
+        path: '/redirect/:path(.*)',
+        component: () => import('@/components/layout/components/redirect')
+      }
+    ]
+  },
+  {
     path: '/login',
     component: () => import('@/views/account/login'),
     hidden: true
@@ -61,6 +72,7 @@ export let constantRoutes = [
   {
     path: '/productList',
     component: Layout,
+    redirect: '/productList/index',
     children: [
       {
         path: 'index',
@@ -81,7 +93,7 @@ constantRoutes = [
 const testRoute = {
   path: '/test',
   component: Layout,
-  redirect: '/guide/index',
+  redirect: '/test/index',
   children: [
     {
       path: 'index',
